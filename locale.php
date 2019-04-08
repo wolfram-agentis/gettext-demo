@@ -23,7 +23,11 @@ bind_textdomain_codeset('messages', 'UTF-8');
 // set default $domain used when we call gettext()
 textdomain('messages');
 
-
+/**
+ * @param array $validLanguages - allowable languages
+ *
+ * @return string
+ */
 function getLanguage($validLanguages) {
     // allow hard overwrite via ?lang=x param
     if (isset($_GET['lang']) && in_array($_GET['lang'], $validLanguages)) {
@@ -42,6 +46,11 @@ function getLanguage($validLanguages) {
     return 'en-US';
 }
 
+/**
+ * @param string $acceptLanguageString - (optional), default = $_SERVER['HTTP_ACCEPT_LANGUAGE']
+ *
+ * @return array - accepted languages sorted in descending order by weight
+ */
 function parseHttpAcceptLanguage($acceptLanguageString = '') {
     // e.g., en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7
     $acceptLanguageString = $acceptLanguageString ?: $_SERVER['HTTP_ACCEPT_LANGUAGE'];
