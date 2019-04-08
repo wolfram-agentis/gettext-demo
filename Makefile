@@ -9,5 +9,8 @@ lang-update:
 lang-compile:
 	msgfmt locale/$(LOC)/LC_MESSAGES/messages.po -o locale/$(LOC)/LC_MESSAGES/messages.mo
 
+lang-new:
+	mkdir -p locale/$(LOC)/LC_MESSAGES
+
 test:
 	vendor/bin/phpunit test --bootstrap vendor/autoload.php
