@@ -9,6 +9,9 @@ $ brew link gettext --force
 ```
 Sometimes macOS is finicky with `brew link`s. You might want to do `brew install php` or `brew install php@5.6` for the time being.
 
+Compile all the `.po` files for the first time:
+> `$ make lang-compile`
+
 Consider downloading [POEdit](https://poedit.net/). Not a requirement, but it's a nice QoL tool.
 
 Finally, if you plan on running the PHPUnit tests, run `composer install`. Otherwise, this demo does not use Composer.
@@ -20,7 +23,7 @@ Theoretically, you can run this demo locally if you manage to get `gettext` link
 $ php -S localhost:8001
 ```
 
-Visit `localhost:8001/i18n-demo.php` to see the default output `Hello World! I have 5 books.`
+Visit `localhost:8001/i18n-demo.php` to see the default output `hello world! i have 5 books`
 
 This demo comes with two languages, Spanish (es) and French (fr). You can update your language settings in your browser to either of those two languages and refresh the demo page to see the translations.
 

@@ -2,7 +2,7 @@
 
 session_start();
 
-const VALID_LANGUAGES = ['en', 'en-US', 'es', 'fr'];
+const VALID_LANGUAGES = ['en', 'es', 'fr'];
 
 // determine preferred language
 $language = getLanguage(VALID_LANGUAGES);

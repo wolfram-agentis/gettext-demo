@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-08 13:15-0500\n"
+"POT-Creation-Date: 2019-04-08 16:13-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: i18n-demo.php:5
-msgid "Hello World!"
+msgid "demo.greeting"
 msgstr ""
 
 #: i18n-demo.php:7
 #, php-format
-msgid "I have %d book."
-msgid_plural "I have %d books."
+msgid "demo.books.single"
+msgid_plural "demo.books.plural.%d"
 msgstr[0] ""
 msgstr[1] ""
