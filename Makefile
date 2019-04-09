@@ -1,7 +1,7 @@
-.PHONY: lang-source lang-update test
+.PHONY: lang-source lang-update lang-compile test
 
 lang-source:
-	xgettext *.php --from-code=UTF-8 -o locale/_templates/raw.pot
+	xgettext *.php --from-code=UTF-8 -o locale_templates/raw.pot
 
 lang-update:
 	msgmerge -U locale/$(LOC)/LC_MESSAGES/messages.po locale/_templates/raw.pot

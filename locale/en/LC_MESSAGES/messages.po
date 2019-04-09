@@ -25,6 +25,6 @@ msgstr "hello world"
 #: i18n-demo.php:7
 #, php-format
 msgid "demo.books.single"
-msgid_plural "demo.books.plural.%d"
+msgid_plural "demo.books.%d"
 msgstr[0] "i have one book"
 msgstr[1] "i have %d books"
