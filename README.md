@@ -9,12 +9,14 @@ $ brew link gettext --force
 ```
 Sometimes macOS is finicky with `brew link`s. You might want to do `brew install php` or `brew install php@5.6` for the time being.
 
-Compile all the `.po` files for the first time:
-> `$ make lang-compile`
+Compile all the `.po` files for the first time and install our single dependency:
+
+```
+$ make lang-compile
+$ composer install
+```
 
 Consider downloading [POEdit](https://poedit.net/). Not a requirement, but it's a nice QoL tool.
-
-Finally, if you plan on running the PHPUnit tests, run `composer install`. Otherwise, this demo does not use Composer.
 
 ## Usage
 Theoretically, you can run this demo locally if you manage to get `gettext` linked up.
@@ -57,7 +59,7 @@ To add a language, run:
 
  with the [proper locale code](https://gist.github.com/jasef/337431c43c3addb2cbd5eb215b376179). It is suggested you use POEdit to create new `.po` files since it will set up proper meta-data for you. You can reuse the `.pot` file to template out the messages you need to translate and the rest of the steps are the same as updating an existing `.po` file.
 
-Don't forget to add the new locale code into the `VALID_LANGUAGES` array in `locale.php`!
+Don't forget to add the new language and locale code into the `SUPPORTED_LANGUAGES` array in `locale.php`!
 
 ## Future Stuff
 Some things to consider:
