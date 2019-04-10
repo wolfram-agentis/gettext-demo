@@ -13,7 +13,7 @@ Compile all the `.po` files for the first time and install our single dependency
 
 ```
 $ make lang-compile
-$ composer install
+$ pear install HTTP2
 ```
 
 Consider downloading [POEdit](https://poedit.net/). Not a requirement, but it's a nice QoL tool.

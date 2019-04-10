@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
+require 'HTTP2.php';
 
 const SUPPORTED_LANGUAGES = [
     'en' => 'en_US',

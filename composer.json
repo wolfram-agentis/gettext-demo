@@ -3,6 +3,5 @@
         "phpunit/phpunit": "^8.1"
     },
     "require": {
-        "pear/http2": "^1.1"
     }
 }
